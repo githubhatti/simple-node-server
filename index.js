@@ -3,24 +3,22 @@ var http = require('http');
 var server = http.createServer(function (req, res) {
     if (req.url == '/') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is the Default Page of the Server and its working fine. If You have not specified anything or a Address, this page should be visible.</p></body></html>');
+        res.write('<html><body style="background-color: blue; font-size: 20px;"><p style="color: white;">This is the Default Page of the Server and its working fine. If You have not specified anything or an Address, this page should be visible.</p></body></html>');
         res.end();
-
     }
     else if (req.url == "/home") {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is Home Page. Hello All And Good Morning. This page was added by AWS Code Pipeline. </p></body></html>');
+        res.write('<html><body style="background-color: blue; font-size: 20px;"><p style="color: white;">This is Home Page. Hello All And Good Morning. This page was added by AWS Code Pipeline. </p></body></html>');
         res.end();
-
     }
     else if (req.url == "/dashboard") {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is Dashboard Page. Hello All And Good Morning.</p></body></html>');
+        res.write('<html><body style="background-color: blue; font-size: 20px;"><p style="color: white;">This is Dashboard Page. Hello All And Good Morning.</p></body></html>');
         res.end();
     }
     else if (req.url == "/error") {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is Error Page. Hello All And Good Morning.</p></body></html>');
+        res.write('<html><body style="background-color: blue; font-size: 20px;"><p style="color: white;">This is Error Page. Hello All And Good Morning.</p></body></html>');
         res.end();
     }
     else
@@ -28,4 +26,4 @@ var server = http.createServer(function (req, res) {
 });
 
 server.listen(5000);
-console.log('Node.js web server at port 5000 is running..')
+console.log('Node.js web server at port 5000 is running..');
